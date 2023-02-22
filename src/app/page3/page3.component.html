@@ -1,0 +1,20 @@
+<div class="patchform">
+    <div class="container ">
+        <h1 class="head text-center p-3">Registration Form</h1>
+        <form (ngSubmit)="onSubmit()"  class="form p-4" style="border: 1px solid gray; background: palegreen">
+         
+          
+        
+          <!-- Number input -->
+          <div class="form-outline mb-4">
+              <label class="form-label" for="form6Example7">Id</label>
+            <input type="number" name="phone" id="form6Example7" class="form-control" [(ngModel)]="phone"/>
+          </div>
+      
+          <div class="button text-center">
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary m-1 p-2 btn-block mb-4">Delete</button>
+          </div>
+        </form>
+    </div>
+  </div>

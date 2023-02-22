@@ -1,0 +1,24 @@
+<div class="patchform">
+    <div class="container ">
+        <h1 class="head text-center p-3">Registration Form</h1>
+        <form (ngSubmit)="onSubmit()"  class="form p-4" style="border: 1px solid gray; background: powderblue">
+         
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+              <label class="form-label" for="form6Example5">Email</label>
+            <input type="email" name="email" id="form6Example5" class="form-control" [(ngModel)]="email" />
+          </div>
+        
+          <!-- Number input -->
+          <div class="form-outline mb-4">
+              <label class="form-label" for="form6Example7">Phone</label>
+            <input type="number" name="phone" id="form6Example7" class="form-control" [(ngModel)]="phone"/>
+          </div>
+      
+          <div class="button text-center">
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary m-1 p-2 btn-block mb-4">Patch</button>
+          </div>
+        </form>
+    </div>
+  </div>

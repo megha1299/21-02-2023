@@ -1,0 +1,15 @@
+@import '../../assets/scss/variables.scss';
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/base.scss';
+
+.form{
+    width: 40em;
+    margin: 5em auto;
+}
+
+input[type="number"]{
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 5px;
+}

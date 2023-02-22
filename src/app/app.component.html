@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg bg-success p-2">
+  <div class="container">
+    <a class="navbar-brand" href="/home" style="font-size: xx-large; font-family: 'Times New Roman', Times, serif;">Form</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active" aria-current="page">Post</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/page" routerLinkActive="active" aria-current="page">Put</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/page2" routerLinkActive="active" aria-current="page">Patch</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/page3" routerLinkActive="active" aria-current="page">Delete</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ 
+<!-- <app-home></app-home>
+<app-page></app-page>
+<app-page2></app-page2>
+<app-page3></app-page3> -->
+<router-outlet></router-outlet>

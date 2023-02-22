@@ -1,0 +1,53 @@
+<div class="putform">
+  <div class="container ">
+      <h1 class="head text-center p-3">Registration Form</h1>
+      <form (ngSubmit)="onSubmit()"  class="form p-4" style="border: 1px solid gray; background: plum;">
+        <!-- firstname input -->
+        <div class="row mb-4">
+          <div class="col">
+            <div class="form-outline">
+                <label class="form-label" for="form6Example1">First name</label>
+                <input type="text" name="firstnmae" id="form6Example1" class="form-control" [(ngModel)]="firstname" />
+            </div>
+          </div>
+          <!-- lastname -->
+          <div class="col">
+            <div class="form-outline">
+                <label class="form-label" for="form6Example2">Last name</label>
+                <input type="text" name="lastname" id="form6Example2" class="form-control" [(ngModel)]="lastname" />
+            </div>
+          </div>
+        </div>
+      
+      
+        <!-- address input -->
+        <div class="form-outline mb-4">
+            <label class="form-label" for="form6Example4">Address</label>
+            <input type="text" name="address" id="form6Example4" class="form-control" [(ngModel)]="address" />
+        </div>
+      
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+            <label class="form-label" for="form6Example5">Email</label>
+          <input type="email" name="email" id="form6Example5" class="form-control" [(ngModel)]="email" />
+        </div>
+    
+         <!-- Number input -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form6Example6">Date of Birth</label>
+        <input type="date" name="dob" id="form6Example6" class="form-control" [(ngModel)]="dob"/>
+      </div>
+      
+        <!-- Number input -->
+        <div class="form-outline mb-4">
+            <label class="form-label" for="form6Example7">Phone</label>
+          <input type="number" name="phone" id="form6Example7" class="form-control" [(ngModel)]="phone"/>
+        </div>
+    
+        <div class="button text-center">
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary m-1 p-2 btn-block mb-4">Put</button>
+        </div>
+      </form>
+  </div>
+</div>
