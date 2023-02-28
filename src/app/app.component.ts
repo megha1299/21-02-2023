@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ServicesService } from './dataservice/services.service';
 
 
 @Component({
@@ -9,5 +10,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'my-project';
 
- 
+ constructor(private service: ServicesService){}
+
+ working= this.service.working;
 }

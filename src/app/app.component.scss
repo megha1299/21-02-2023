@@ -7,4 +7,9 @@
     .nav-link.active, .navbar-nav.show.nav-link {
         color: #7fffd4;
     }
+    .loader{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
 }
