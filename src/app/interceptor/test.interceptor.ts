@@ -27,7 +27,6 @@ export class TestInterceptor implements HttpInterceptor {
       tap((evt:any)=> 
       {
         console.log(evt);
-        console.log(Math.round(evt.loaded/evt.total * 100));
         this.service.working.next(true);
       }),
       catchError( (err: any) => {
